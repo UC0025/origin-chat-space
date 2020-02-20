@@ -32,7 +32,7 @@ Things you may want to cover:
 |username|string|null: false|
 ### アソシエーション
 - has_many :messages
-- has_many :groups
+- has_many :groups, through:  :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
@@ -40,8 +40,10 @@ Things you may want to cover:
 |image|text||
 |text|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### アソシエーション
 - belongs_to :user
+- belongs_to :group
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -50,6 +52,7 @@ Things you may want to cover:
 ### アソシエーション
 - has_many :users_groups
 - has_many  :users,  through:  :users_groups
+- has_many :messages
 
 ## users_groupsテーブル
 |Column|Type|Options|
