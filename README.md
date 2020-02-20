@@ -32,7 +32,7 @@ Things you may want to cover:
 |username|string|null: false|
 ### アソシエーション
 - has_many :messages
-- has_many :groups, through:  :users_groups
+- has_many :groups, through: :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
@@ -51,7 +51,7 @@ Things you may want to cover:
 |groupname|text|null: false|
 ### アソシエーション
 - has_many :users_groups
-- has_many  :users,  through:  :users_groups
+- has_many :users, through: :users_groups
 - has_many :messages
 
 ## users_groupsテーブル
