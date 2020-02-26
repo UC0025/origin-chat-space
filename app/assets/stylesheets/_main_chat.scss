@@ -1,24 +1,22 @@
 .main-chat {
   width: calc(100vw - 300px);
+}
 
-  .main-chat-header {
-    
-    height: 100px;
-    background-color: #ffffff ;
-    
-  }
+.main-chat-header {
+  height: 100px;
+  background-color: #ffffff ;
+}
 
-  .main-chat-space {
-    
-    height: calc(100vh - 190px);
-    background-color: #fafafa ;
-    
-  }
+.main-chat-space {
+  height: calc(100vh - 190px);
+  background-color: #fafafa ;
+}
 
-  .main-chat-footer {
-    
-    height: 90px;
-    background-color: #d2d2d2 ;
+.main-chat-footer {
+  height: 90px;
+  background-color: #d2d2d2 ;
+}
 
-  }
+.edit-button {
+  
 }

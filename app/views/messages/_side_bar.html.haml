@@ -1,7 +1,25 @@
 -# <サイドバー>
 .side-bar
-  .side-bar-header
-    ユーザー名・グループ作成アイコン・アカウント設定アイコン
+  .side-bar__header
+    .side-bar__header__content
+      .side-bar__header__content__name
+        名前
+      .side-bar__header__content__icons
+        .side-bar__header__content__icons__pencil
+          = icon('fas fa-L', 'edit')
+        .side-bar__header__content__icons__option
+          = icon('fas fa-L', 'cog')
 
-  .side-bar-space
-    加入しているグループ一覧(そのまま飛べる)
+    
+
+  .side-bar__space
+    .side-bar__space__groups
+      .side-bar__space__groups__name
+        グループ名
+      .side-bar__space__groups__message
+        まだメッセージがありません
+    .side-bar__space__groups
+      .side-bar__space__groups__name
+        グループ名
+      .side-bar__space__groups__message
+        まだメッセージがありません
