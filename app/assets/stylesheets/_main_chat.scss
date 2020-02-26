@@ -17,8 +17,6 @@
         font-size: 20px;
         color: #333333;
         margin-bottom: 15px;
-
-
       }
       
       &__name {
@@ -29,19 +27,57 @@
     }
 
     &__edit {
-      color: #38aef0;
       border: 1px solid #38aef0;
       height: 40px;
       width: 72px;
       margin-top: 28px;
       text-align: center;
       line-height: 40px;
+      a {
+        color: #38aef0;
+        text-decoration: none;
+
+      }
     }
 
   }
+  
   &__space {
     height: calc(100vh - 190px);
     background-color: #fafafa ;
+
+      &__messages {
+        padding-top: 35px;
+        margin-left: 40px;
+
+        &__data {
+          padding-bottom: 46px;
+
+
+          &__name {
+            font-size: 16px;
+            color: #333333;
+            display: flex;
+            
+          
+
+            &__time {
+              font-size: 12px;
+              color: #999999;
+              margin-left: 10px;
+
+
+            }
+          }
+
+          &__comment {
+            font-size: 14px;
+            color: #434A54;
+            margin-top: 12px;
+
+          }
+        }
+      }
   }
 
   &__footer {
