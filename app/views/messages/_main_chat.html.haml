@@ -39,4 +39,12 @@
 
 
   .main-chat__footer
-    入力する箱・投稿ボタン
+    .main-chat__footer__form
+      .main-chat__footer__form__box
+        %input.main-chat__footer__form__box{:placeholder => "type a message"}
+        .main-chat__footer__form__box__image
+          = link_to "#", class: "image__btn" do
+            = icon('fas fa-L', 'image')
+      .main-chat__footer__form__send-button
+        = link_to "#", class: "send__btn" do
+          Send
