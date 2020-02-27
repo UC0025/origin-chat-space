@@ -113,9 +113,14 @@
           top: 0px;
           right: 10px;
 
-          a {
+          i {
             color: #333333;
-            font-size: 24px;
+            font-size: 22px;
+            line-height: 50px;
+          }
+
+          input {
+            display: none;
           }
         
         }
