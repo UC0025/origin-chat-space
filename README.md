@@ -29,7 +29,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### アソシエーション
 - has_many :messages
 - has_many :groups, through: :users_groups
