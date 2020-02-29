@@ -6,22 +6,17 @@
         = current_user.name
       .side-bar__header__content__icons
         .side-bar__header__content__icons__pencil
-          = link_to do
+          = link_to new_group_path do
             = icon('fas fa-L', 'edit', class: 'icon')
         .side-bar__header__content__icons__option
           = link_to edit_user_path(current_user) do
             = icon('fas fa-L', 'cog', class: 'icon')
 
   .side-bar__space
-    .side-bar__space__groups
-      .side-bar__space__groups__name
-        = link_to "#", class: "group__select" do
-          グループ名
-      .side-bar__space__groups__message
-        新着メッセージ
-    .side-bar__space__groups
-      .side-bar__space__groups__name
-        = link_to "#", class: "group__select" do
-          グループ名
-      .side-bar__space__groups__message
-        新着メッセージ
+    - current_user.groups.each do |group|
+      .side-bar__space__groups
+        .side-bar__space__groups__name
+          = link_to "#", class: "group__select" do
+            = group.name
+        .side-bar__space__groups__message
+          新着メッセージ
