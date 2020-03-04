@@ -15,8 +15,8 @@
   .side-bar__space
     - current_user.groups.each do |group|
       .side-bar__space__groups
-        .side-bar__space__groups__name
-          = link_to "#", class: "group__select" do
+        = link_to group_messages_path(group) do
+          .side-bar__space__groups__name
             = group.name
-        .side-bar__space__groups__message
-          新着メッセージ
+          .side-bar__space__groups__message
+            = group.show_last_message
