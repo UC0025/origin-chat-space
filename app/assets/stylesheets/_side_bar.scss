@@ -40,14 +40,14 @@
     &__groups {
       background-color: #2f3e51 ;
       padding: 20px;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
       &__name {
         color: #ffffff;
         font-size: 15px;
         margin-bottom: 5px;
-        a {
-          color: #ffffff;
-          text-decoration: none;
-        }
       }
       &__message {
         color: #ffffff;
