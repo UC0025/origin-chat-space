@@ -1,0 +1,123 @@
+.main-chat {
+  width: calc(100vw - 300px);
+  &__header {
+    background-color: #ffffff ;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    &__data {
+      margin-top: 35px;
+
+      &__group {
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 15px;
+      }
+      
+      &__name {
+        font-size: 12px;
+        color: #999999;
+        margin-bottom: 0px;
+      }
+    }
+
+    &__edit {
+      border: 1px solid #38aef0;
+      height: 40px;
+      width: 72px;
+      margin-top: 28px;
+      text-align: center;
+      line-height: 40px;
+
+      a {
+        color: #38aef0;
+        text-decoration: none;
+      }
+    }
+  }
+  &__space {
+    height: calc(100vh - 190px);
+    background-color: #fafafa ;
+
+    &__messages {
+      padding-top: 35px;
+      margin-left: 40px;
+
+      &__data {
+        padding-bottom: 46px;
+
+        &__name {
+          font-size: 16px;
+          color: #333333;
+          display: flex;
+
+          &__time {
+            font-size: 12px;
+            color: #999999;
+            margin-left: 10px;
+          }
+        }
+
+        &__comment {
+          font-size: 14px;
+           color: #434A54;
+           margin-top: 12px;
+        }
+      }
+    }
+  }
+  &__footer {
+    height: 90px;
+    background-color: #d2d2d2 ;
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      &__box {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        line-height: 50px;
+        input {
+          width: 100%;
+          height: 50px;
+          border-style: none;
+          padding-left: 10px;
+          padding-right: 40px;
+        }
+        form {
+          display: flex;
+        }
+        &__image {
+          position: absolute;
+          top: 0px;
+          right: 130px;
+          i {
+            color: #333333;
+            font-size: 22px;
+            line-height: 50px;
+          }
+          input {
+            display: none;
+          }
+        }
+      }
+      .form__submit {
+        background-color: #38aef0;
+        height: 50px;
+        width: 100px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

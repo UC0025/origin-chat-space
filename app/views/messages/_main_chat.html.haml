@@ -1,1 +1,30 @@
-<チャット画面>
+-# <チャット画面>
+.main-chat
+  .main-chat__header
+    .main-chat__header__data
+      .main-chat__header__data__group
+        = @group.name
+      .main-chat__header__data__name
+        Member :
+        - @group.users.each do |user|
+          = user.name
+    .main-chat__header__edit  
+      = link_to edit_group_path(@group.id) do
+        Edit
+        
+        
+
+  .main-chat__space
+    .main-chat__space__messages
+      = render @messages
+
+  .main-chat__footer
+    .main-chat__footer__form
+      .main-chat__footer__form__box
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+          .main-chat__footer__form__box__image
+            = f.label :image, class: 'form__mask__image' do
+              = icon('fas fa-L', 'image')
+              = f.file_field :image, class: 'hidden'
+          = f.submit 'Send', class: 'form__submit' 
