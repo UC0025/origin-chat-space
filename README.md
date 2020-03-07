@@ -29,7 +29,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### アソシエーション
 - has_many :messages
 - has_many :groups, through: :users_groups
@@ -53,7 +53,7 @@ Things you may want to cover:
 - has_many :users, through: :users_groups
 - has_many :messages
 
-## users_groupsテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
