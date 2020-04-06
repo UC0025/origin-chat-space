@@ -73,6 +73,7 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
+      console.log(messasges);
       if (messages.length !== 0) {
         var insertHTML = '';
         $.each(messages, function(i, message) {
